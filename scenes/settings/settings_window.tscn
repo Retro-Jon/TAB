@@ -1,0 +1,123 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4fqlwtcmomhm"]
+
+[ext_resource type="Theme" uid="uid://obicqd30stvj" path="res://UI.tres" id="1_ye8i0"]
+[ext_resource type="Script" path="res://scenes/settings/settings_window.gd" id="2_ef5rn"]
+
+[node name="SettingsWindow" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ye8i0")
+script = ExtResource("2_ef5rn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.254902, 0.254902, 0.254902, 1)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Setting" type="VBoxContainer" parent="ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BackgroundColor" type="Label" parent="ScrollContainer/HBoxContainer/Setting"]
+layout_mode = 2
+text = "Background Color"
+
+[node name="DefaultTextColor" type="Label" parent="ScrollContainer/HBoxContainer/Setting"]
+layout_mode = 2
+text = "Default Text Color"
+
+[node name="AllowTextColorOverride" type="Label" parent="ScrollContainer/HBoxContainer/Setting"]
+layout_mode = 2
+text = "Allow Text Color Override"
+
+[node name="InputTextColor" type="Label" parent="ScrollContainer/HBoxContainer/Setting"]
+layout_mode = 2
+text = "Input Text Color"
+
+[node name="EnableTTS" type="Label" parent="ScrollContainer/HBoxContainer/Setting"]
+layout_mode = 2
+text = "Enable Text to Speech"
+
+[node name="EnableSoundFX" type="Label" parent="ScrollContainer/HBoxContainer/Setting"]
+layout_mode = 2
+text = "Enable Sound Effects"
+
+[node name="EnableMusic" type="Label" parent="ScrollContainer/HBoxContainer/Setting"]
+layout_mode = 2
+text = "Enable Music"
+
+[node name="Value" type="VBoxContainer" parent="ScrollContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BackgroundColor" type="ColorPickerButton" parent="ScrollContainer/HBoxContainer/Value"]
+layout_mode = 2
+text = "BackgroundColor"
+
+[node name="DefaultTextColor" type="ColorPickerButton" parent="ScrollContainer/HBoxContainer/Value"]
+layout_mode = 2
+text = "DefaultTextColor"
+
+[node name="AllowTextColorOverride" type="CheckButton" parent="ScrollContainer/HBoxContainer/Value"]
+layout_mode = 2
+text = " "
+
+[node name="InputTextColor" type="ColorPickerButton" parent="ScrollContainer/HBoxContainer/Value"]
+layout_mode = 2
+text = "InputTextColor"
+
+[node name="EnableTTS" type="CheckButton" parent="ScrollContainer/HBoxContainer/Value"]
+layout_mode = 2
+text = " "
+
+[node name="EnableSoundFX" type="CheckButton" parent="ScrollContainer/HBoxContainer/Value"]
+layout_mode = 2
+text = " "
+
+[node name="EnableMusic" type="CheckButton" parent="ScrollContainer/HBoxContainer/Value"]
+layout_mode = 2
+text = " "
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Save" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Save"
+
+[node name="Cancel" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Cancel"
+
+[connection signal="pressed" from="HBoxContainer/Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="HBoxContainer/Cancel" to="." method="_on_cancel_pressed"]

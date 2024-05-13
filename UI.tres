@@ -1,0 +1,185 @@
+[gd_resource type="Theme" load_steps=25 format=3 uid="uid://obicqd30stvj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlb51"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nl4im"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ldf7y"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y1cq8"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_buco8"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ttk2w"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i0av0"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4fdwj"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a14hg"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cwd4m"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4eb2j"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gtcyb"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_olhs6"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hfecv"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ej2gr"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iu45b"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nqnyk"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_udmjj"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_re5b5"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0vrbv"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_13oyx"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jxon3"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f73u4"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_32dul"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[resource]
+Button/font_sizes/font_size = 30
+CheckButton/styles/disabled = SubResource("StyleBoxEmpty_dlb51")
+CheckButton/styles/focus = SubResource("StyleBoxEmpty_nl4im")
+CheckButton/styles/hover = SubResource("StyleBoxEmpty_ldf7y")
+CheckButton/styles/hover_pressed = SubResource("StyleBoxEmpty_y1cq8")
+CheckButton/styles/normal = SubResource("StyleBoxEmpty_buco8")
+CheckButton/styles/pressed = SubResource("StyleBoxEmpty_ttk2w")
+CodeEdit/font_sizes/font_size = 30
+ColorPickerButton/styles/disabled = SubResource("StyleBoxEmpty_i0av0")
+ColorPickerButton/styles/focus = SubResource("StyleBoxEmpty_4fdwj")
+ColorPickerButton/styles/hover = SubResource("StyleBoxEmpty_a14hg")
+ColorPickerButton/styles/normal = SubResource("StyleBoxEmpty_cwd4m")
+ColorPickerButton/styles/pressed = SubResource("StyleBoxEmpty_4eb2j")
+ItemList/colors/font_color = Color(1, 1, 1, 1)
+ItemList/colors/font_hovered_color = Color(1, 1, 1, 1)
+ItemList/colors/font_outline_color = Color(1, 1, 1, 1)
+ItemList/colors/font_selected_color = Color(1, 1, 1, 1)
+ItemList/colors/guide_color = Color(0, 0, 0, 0)
+ItemList/font_sizes/font_size = 30
+ItemList/styles/cursor = SubResource("StyleBoxEmpty_gtcyb")
+ItemList/styles/cursor_unfocused = SubResource("StyleBoxEmpty_olhs6")
+ItemList/styles/focus = SubResource("StyleBoxEmpty_hfecv")
+ItemList/styles/hovered = SubResource("StyleBoxEmpty_ej2gr")
+ItemList/styles/panel = SubResource("StyleBoxEmpty_iu45b")
+ItemList/styles/selected = SubResource("StyleBoxEmpty_nqnyk")
+ItemList/styles/selected_focus = SubResource("StyleBoxEmpty_udmjj")
+Label/font_sizes/font_size = 30
+Label/styles/normal = SubResource("StyleBoxEmpty_re5b5")
+LineEdit/font_sizes/font_size = 30
+LineEdit/styles/focus = SubResource("StyleBoxEmpty_0vrbv")
+LineEdit/styles/normal = SubResource("StyleBoxEmpty_13oyx")
+LineEdit/styles/read_only = SubResource("StyleBoxEmpty_jxon3")
+RichTextLabel/font_sizes/normal_font_size = 30
+RichTextLabel/styles/focus = SubResource("StyleBoxEmpty_f73u4")
+RichTextLabel/styles/normal = SubResource("StyleBoxEmpty_32dul")
+TabBar/constants/h_separation = 10
+TabBar/font_sizes/font_size = 30
+TabContainer/font_sizes/font_size = 30

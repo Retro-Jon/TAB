@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://2tcuvrpp4680"]
+
+[ext_resource type="Theme" uid="uid://obicqd30stvj" path="res://UI.tres" id="1_4hruw"]
+[ext_resource type="Script" path="res://scenes/items/inventory_item.gd" id="2_jssii"]
+
+[node name="inventory_item" type="VBoxContainer" groups=["items"]]
+custom_minimum_size = Vector2(200, 30)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_4hruw")
+script = ExtResource("2_jssii")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+vertical_alignment = 1
+
+[node name="Data" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Key" type="ItemList" parent="Data"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 0
+mouse_filter = 1
+mouse_force_pass_scroll_events = false
+auto_height = true
+
+[node name="Quantity" type="ItemList" parent="Data"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+focus_mode = 0
+mouse_filter = 1
+mouse_force_pass_scroll_events = false
+auto_height = true

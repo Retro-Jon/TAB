@@ -1,0 +1,104 @@
+[gd_scene load_steps=3 format=3 uid="uid://i7sju7ldqvdh"]
+
+[ext_resource type="Theme" uid="uid://obicqd30stvj" path="res://UI.tres" id="1_chfuq"]
+[ext_resource type="Script" path="res://scenes/editor/edit.gd" id="2_r4jro"]
+
+[node name="Edit" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_chfuq")
+script = ExtResource("2_r4jro")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Options" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Exit" type="Button" parent="VBoxContainer/Options"]
+layout_mode = 2
+text = "Exit Editor"
+
+[node name="Project" type="MenuButton" parent="VBoxContainer/Options"]
+layout_mode = 2
+text = "Project"
+item_count = 4
+popup/item_0/text = "Open"
+popup/item_0/id = 0
+popup/item_1/text = "Close"
+popup/item_1/id = 1
+popup/item_2/text = "Save"
+popup/item_2/id = 2
+popup/item_3/text = "New File"
+popup/item_3/id = 3
+
+[node name="CodeView" type="Button" parent="VBoxContainer/Options"]
+visible = false
+layout_mode = 2
+text = "Code Editor"
+
+[node name="Run" type="Button" parent="VBoxContainer/Options"]
+visible = false
+layout_mode = 2
+text = "Run"
+
+[node name="Stop" type="Button" parent="VBoxContainer/Options"]
+visible = false
+layout_mode = 2
+text = "Stop"
+
+[node name="Views" type="TabContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+tabs_visible = false
+
+[node name="CodeView" type="TabContainer" parent="VBoxContainer/Views"]
+layout_mode = 2
+
+[node name="Open" type="FileDialog" parent="."]
+mode = 3
+title = "Open File(s)"
+initial_position = 2
+size = Vector2i(800, 400)
+ok_button_text = "Open"
+file_mode = 1
+access = 1
+root_subfolder = "Adventures"
+filters = PackedStringArray("*.tab")
+
+[node name="NewFile" type="FileDialog" parent="."]
+mode = 3
+initial_position = 2
+size = Vector2i(800, 400)
+ok_button_text = "Save"
+access = 1
+root_subfolder = "Adventures"
+filters = PackedStringArray("*.tab")
+
+[node name="Exit" type="ConfirmationDialog" parent="."]
+disable_3d = true
+mode = 2
+initial_position = 4
+size = Vector2i(255, 138)
+ok_button_text = "Yes"
+dialog_text = "Exit the editor?"
+cancel_button_text = "No"
+
+[connection signal="pressed" from="VBoxContainer/Options/Exit" to="Exit" method="show"]
+[connection signal="pressed" from="VBoxContainer/Options/CodeView" to="." method="_on_code_view_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options/Run" to="." method="_on_run_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options/Stop" to="." method="_on_stop_pressed"]
+[connection signal="file_selected" from="Open" to="." method="_on_open_file_selected"]
+[connection signal="files_selected" from="Open" to="." method="_on_open_files_selected"]
+[connection signal="file_selected" from="NewFile" to="." method="_on_new_file_file_selected"]
+[connection signal="confirmed" from="Exit" to="." method="_on_exit_confirmed"]
